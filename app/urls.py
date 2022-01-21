@@ -4,6 +4,6 @@ from .import views
 from app.views import LoginFormViews
 
 urlpatterns = [
-    path('', views.Home,name='home'),
-    path('login/',LoginFormViews.as_view())
+    path('inicio/', views.Home,name='home'),
+    path('',LoginFormViews.as_view())
 ]
